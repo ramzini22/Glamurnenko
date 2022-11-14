@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    opacity: 0;
+    display: grid;
+    background-color: rgba(0,0,0,0.89);
+    grid-template-columns: 1fr repeat(12, 78px) 1fr ;
+
+}
+body *{
+    font-family: 'Roboto';
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index:99;
+    color:white;
+    grid-row-start: 1;
+    padding-right: 10px;
+}
+.menu-li-img{
+    height: 100%;
+    width: auto;
+}
+#menu-li-img1{
+    display: none;
+}
+#menu-li-img2{
+    float: right;
+}
+#menu-li-img3{
+    float: right;
+    height: 80px;
+    width: auto;
+    margin-top: 20px;
+}
+.menu-li{
+    padding: 10px;
+    cursor: pointer;
+}
+.page{
+    background-color: white;
+    text-align: center;
+}
+#page1{
+    grid-row-start: 1;
+}
+#page2{
+    cursor: pointer;
+}
+#page2 h1{
+    padding-top: 20px;
+    margin-right: 150px;
+}
+#page2Img1{
+    height:150px;
+    width: auto;
+    grid-row-start: 1;
+    float: left;
+    top:0;
+}
+#page3 h1{
+    float:left
+}
+#page3 p:not(#pInPage3){
+    float:left;
+}
+#pInPage3{
+    float:left;
+    text-align: left;
+    line-height:1;
+    padding: 0px 70px 30px 70px;
+}
+#page3 table{
+    width: 100%;
+    border-spacing: 0;
+    border: 1px solid #FDCA00;
+    margin-top: 30px;
+}
+#page3 th {
+    padding: 10px;
+    background-color: rgba(255,240,0,0.89);
+    border: 1px solid #FDCA00;
+    text-align: center;
+}
+#page3 input{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#moneyIcon div{
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#page4 h1{
+    padding-top: 100px;
+}
+#paket{
+    padding: 20px;
+}
+.paket{
+    display: inline-block;
+    border: 2px solid #B7B7B7;
+}
+.textInPaket{
+    padding-top: 20px;
+    text-align: left;
+}
+.textInPaket div {
+    opacity: 0.3;
+}
+.price{
+    margin-top: 20px;
+    font-size: 28px;
+}
+del{
+    position: relative;
+    color: #B7B7B7;
+    text-decoration: none;
+}
+del:before {
+    content: "";
+    border-bottom: 3px solid red;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: rotate(-12deg);
+}
+.paket input{
+    margin-top: 20px;
+    background-color: #FF0C3A;
+    color: white;
+    border: none;
+    width: 90%;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+}
+.paket:hover{
+    box-shadow: 0 0 10px 1px #B7B7B7;
+}
+.photoMessage{
+    padding: 50px;
+    text-align: left;
+}.photoMessage img{
+     width: 50%;
+     cursor: pointer;
+ }
+.photoMessage .text{
+    opacity: 0.7;
+    margin-top: -50%;
+    width: 45%;
+    margin-left: 55%;
+    padding-bottom: 50%;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.89);
+}
+footer input{
+    font-size: 1em;
+    color: white;
+    background-color: rgba(0,0,0,0.89);
+    cursor: pointer;
+}
+#menuInFooter{
+    text-align: left;
+}
+footer a{
+    color: white;
+}
+@media screen and (min-width: 1223px) {
+    body *{
+        grid-column: 2/14;    }
+    #menu-li-img3 {
+        display: none;
+    }
+
+    .menu-li{
+        display: inline-block;
+    }
+    img{
+        width:100%;
+    }
+    h1{
+        font-weight: 10;
+    }
+    p{
+        font-size: 1em;
+        line-height: 2;
+    }
+    header{
+        height: 40px;
+    }
+    #page2 p, #page3{
+        padding: 50px 150px 50px 150px;
+    }
+
+
+    #page3 th {
+        font-size: 1em;
+    }
+    #page3 input{
+    }
+    #moneyIcon div{
+        font-size: 1em;
+        padding: 5px;
+    }
+    .paket {
+        width: 30%;
+        padding: 20px;
+    }
+    .paket:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    #page5{
+        padding: 50px 100px 50px 100px;
+    }
+
+
+
+}
+@media  (max-width: 1224px) {
+    body * {
+        grid-column: 1/15;
+    }
+    #menu-li-img2 {
+        display: none;
+    }
+    .menu-li{
+        display: none;
+        width: 101%;
+        font-size: 3em;
+        background-color: black;
+        border-top: 5px solid white;
+        vertical-align: bottom;
+        box-shadow: 0 -5px black;
+
+    }
+    img{width:100vw;}
+    .page{
+        padding: 0;
+    }
+    h1{
+        font-size: 4em;
+        font-weight: 10;
+    }
+    p{
+        font-size: 3em;
+        line-height: 1;
+    }
+    header{
+        height: 120px;
+    }
+    #menu-li-img1 {
+        display: inline;
+    }
+    #page2 p, #page3{
+        padding: 50px 20px 50px 20px;
+    }
+    #page3 p:not(#pInPage3){
+        line-height:1.5;
+        text-align: left;
+    }
+
+
+    #page3 th {
+        font-size: 1.7em;
+    }
+    #page3 input{
+        font-size: 1.2em;
+    }
+    #moneyIcon div{
+        font-size: 1.5em;
+        padding: 5px;
+    }
+    .paket {
+        width: 80%;
+    }
+    .paket {
+        font-size: 2em;
+        margin-top: 10px;
+        padding: 15px;
+    }
+    .paket input {
+        font-size: 0.8em;
+    }
+    #page5{
+        padding: 50px 10px 50px 10px;
+    }
+    .text{
+        font-size: 2.3em;
+    }
+    footer{
+        font-size: 2em;
+    }
+}
+
+#fancybox-wrap{
+    width: 100%;
+}

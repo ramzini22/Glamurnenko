@@ -1,0 +1,387 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            *   Examples - images
+            */
+
+            $("a#example1").fancybox();
+
+            $("a#example2").fancybox({
+                'overlayShow'	: false,
+                'transitionIn'	: 'elastic',
+                'transitionOut'	: 'elastic'
+            });
+
+            $("a#example3").fancybox({
+                'transitionIn'	: 'none',
+                'transitionOut'	: 'none'
+            });
+
+            $("a#example4").fancybox({
+                'opacity'		: true,
+                'overlayShow'	: false,
+                'transitionIn'	: 'elastic',
+                'transitionOut'	: 'none'
+            });
+
+            $("a#example5").fancybox();
+
+            $("a#example6").fancybox({
+                'titlePosition'		: 'outside',
+                'overlayColor'		: '#000',
+                'overlayOpacity'	: 0.9
+            });
+
+            $("a#example7").fancybox({
+                'titlePosition'	: 'inside'
+            });
+
+            $("a#example8").fancybox({
+                'titlePosition'	: 'over'
+            });
+
+            $("a[rel=example_group]").fancybox({
+                'transitionIn'		: 'none',
+                'transitionOut'		: 'none',
+                'titlePosition' 	: 'over',
+                'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+
+            /*
+            *   Examples - various
+            */
+
+            $("#various1").fancybox({
+                'titlePosition'		: 'inside',
+                'transitionIn'		: 'none',
+                'transitionOut'		: 'none'
+            });
+
+            $("#various2").fancybox();
+
+            $("#various3").fancybox({
+                'width'				: '75%',
+                'height'			: '75%',
+                'autoScale'			: false,
+                'transitionIn'		: 'none',
+                'transitionOut'		: 'none',
+                'type'				: 'iframe'
+            });
+
+            $("#various4").fancybox({
+                'padding'			: 0,
+                'autoScale'			: false,
+                'transitionIn'		: 'none',
+                'transitionOut'		: 'none'
+            });
+        });
+    </script>
+    <title>GLAMURNENKO</title>
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<header>
+    <img id="menu-li-img1" class="menu-li-img" src="./images/menu.png" />
+    <img id="menu-li-img2" class="menu-li-img" src="./images/group6.png"/>
+    <img id="menu-li-img3" class="menu-li-img" src="./images/glamurnenko_white_logo2.png"/>
+    <div class="menu-li">БЛОГ</div>
+    <div class="menu-li">БЕМИНАРЫ</div>
+    <div class="menu-li">СЕМИНАРЫ</div>
+    <div class="menu-li">ТРЕНИНГИ</div>
+    <div class="menu-li">УСЛУГИ</div>
+    <div class="menu-li">ОТЗЫВЫ</div>
+    <div class="menu-li">КОНТАКТЫ</div>
+</header>
+<div id="page1" class="page">
+    <img src="./images/group9.png"/>
+</div>
+<div id="page2" class="page">
+    <img id="page2Img1" src="./images/group2.jpg"/>
+    <h1>
+        СКОРАЯ СТИЛЬНАЯ ПОМОЩЬ
+    </h1>
+    <p>ОНЛАЙН-КОНСУЛЬТАЦИЯ СТЛИСТА В ВАШЕМ МОБИЛЬНОМ ТЕЛЕФОНЕ КОГДА ВАМ НУЖНО: НА
+        <br/>
+        ШОПИНГЕ, ВО ВРЕМЯ РАЗБОРА ГАРДЕРОБА, КОГДА ПОДБИРАЕТЕ КОМПЛЕКТ, ПРОСТО КОГДА НУЖЕН
+        <br/>
+        СОВЕТ
+    </p>
+    <img src="./images/form-reservation-bigcolor.jpg"/>
+    описание картинки
+</div>
+<div id="page3" class="page">
+    <h1>
+        КАК ВСЕ ПРОИСХОДИТ
+    </h1>
+    <p>
+        После оплаты мы подключаем вас в канал в Telegram с нашим стилистом.
+    </p>
+    <p>
+        Подключение происходит в рабочее время: ПН-ЧТ с 10 до 19 МСК
+    </p>
+    <p>
+        Сразу же вы можете писать свои вопросы.
+    </p>
+    <p>
+        Ответы будут в пределах часа в рабочее время: ПН-ЧТ с 10 до 19 МСК
+    </p>
+    <p>
+        Если вы не получаете ответ за 1 час, мы продлеваме время действия услуги на 24 часа.
+    </p>
+    <p>
+        А если нужна помощь в выходной день?
+    </p>
+    <br/>
+    <p id="pInPage3">
+        Напишите об этом как можно раньше, но не менее, чем за 24 часа.Получите
+        подтверждение стилиста. Если вы отправляетесь, к примеру, на шопинг в
+        выходной день и вам нужно, чтобы стилист был с вами на связи, такой вариант
+        возможен по предварительной договоренности со стилистом.
+    </p>
+    <table>
+        <colgroup>
+            <col span="1" width="55%">
+            <col span="3" width="15%">
+        </colgroup>
+        <thead style="background-color: brown">
+        <tr>
+            <th>
+                ВЫ ПОЛУЧАЕТЕ
+            </th>
+            <th>ТЕОРИЯ</th>
+            <th>ПРАКТИКА</th>
+            <th>VIP</th>
+        </tr>
+        </thead>
+        <tr>
+            <th>Все материалы тренинга</th>
+            <th>&#10004;</th>
+            <th>&#10004;</th>
+            <th>&#10004;</th>
+        </tr>
+        <tr>
+            <th>Проверка ДЗ</th>
+            <th>&mdash;</th>
+            <th>2,5 месяца</th>
+            <th>2,5 месяца</th>
+        </tr>
+        <tr>
+            <th>Тренажер по стилевым типажам</th>
+            <th>&mdash;</th>
+            <th>&#10004;</th>
+            <th>&#10004;</th>
+        </tr>
+        <tr>
+            <th>Тренажер по вещас и образам</th>
+            <th>&mdash;</th>
+            <th>&#10004;</th>
+            <th>&#10004;</th>
+        </tr>
+        <thead style="background-color: brown">
+        <tr>
+            <th>Цена</th>
+            <th>7 990 &#8381;</th>
+            <th>9 990 &#8381;</th>
+            <th>24 990 &#8381;</th>
+        </tr>
+        </thead>
+        <tr>
+            <th></th>
+            <th colspan="3">
+                <div id="moneyIcon">
+                    <div>
+                        &#8372;
+                    </div>
+                    <div>
+                        &#8381;
+                    </div>
+                    <div>
+                        &#36;
+                    </div>
+                    <div>
+                        &euro;
+                    </div>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>
+                <input type="button" value="Заказать" />
+            </th>
+            <th>
+                <input type="button" value="Заказать" />
+            </th>
+            <th>
+                <input type="button" value="Заказать" />
+            </th>
+        </tr>
+    </table>
+</div>
+<div id="page4" class="page">
+    <img id="page4Img1" src="./images/2razmera_books_preview_1200_c.png"/>
+    <h1>
+        ПАКЕТЫ УСЛУГ
+    </h1>
+    <div id="paket">
+        <div class="paket">
+            пакет
+            <h3>
+                &laquo;Попробовать&raquo;
+            </h3>
+            <div class="textInPaket">
+                <div>
+                    Срок:
+                </div>
+                в пределах 24 часов
+                <br/>
+                <br/>
+                <div>
+                    Вопросов/комплектов на оценку:
+                </div>
+                5 ваших луков или 5 вопросов
+            </div>
+            <div class="price">
+                <del>890 &#8381;</del>
+                <br/>
+                <h3>
+                    499 &#8381;
+                </h3>
+            </div>
+            <input type="button" value="ЗАКАЗАТЬ"/>
+        </div>
+        <div class="paket">
+            пакет
+            <h3>
+                &laquo;1 день&raquo;
+            </h3>
+            <div class="textInPaket">
+                <div>
+                    Срок:
+                </div>
+                в пределах 24 часов
+                <br/>
+                <br/>
+                <div>
+                    Вопросов/комплектов на оценку:
+                </div>
+                до 100
+                <br/>
+                <br/>
+            </div>
+            <div class="price">
+                <del>3900 &#8381;</del>
+                <br/>
+                <h3>
+                    2900 &#8381;
+                </h3>
+            </div>
+            <input type="button" value="ЗАКАЗАТЬ"/>
+        </div>
+        <div class="paket">
+            пакет
+            <h3>
+                &laquo;1 месяц&raquo;
+            </h3>
+            <div class="textInPaket">
+                <div>
+                    Срок:
+                </div>
+                в пределах 24 часов
+                <br/>
+                <br/>
+                <div>
+                    Вопросов/комплектов на оценку:
+                </div>
+                неограниченно
+                <br/>
+                <br/>
+            </div>
+            <div class="price">
+                <del>
+                    11900 &#8381;
+                </del>
+                <br/>
+                <h3>
+                    9900 &#8381;
+                </h3>
+            </div>
+            <input type="button" value="ЗАКАЗАТЬ"/>
+        </div>
+    </div>
+</div>
+<div id="page6" class="page">
+    <h1>
+        КАК ВСЕ ПРОИСХОДИТ
+    </h1>
+    <div class="photoMessage">
+        <a rel="example_group" href="./images/first-class-stylish-help-chat-1.jpg" title="Lorem ipsum dolor sit amet">
+            <img src="./images/first-class-stylish-help-chat-1.jpg"/>
+        </a>
+        <div class="text">
+            Клиентка просит стилиста<br/>
+            помочь выбрать одну из курток<br/>
+            милитари
+        </div>
+
+    </div>
+    <div class="photoMessage">
+        <a rel="example_group" href="./images/first-class-stylish-help-chat-2.jpg" title="Lorem ipsum dolor sit amet">
+            <img src="./images/first-class-stylish-help-chat-2.jpg"/>
+        </a>
+        <div class="text">
+            Стилист запрашивает<br/>
+            дополнительные фотографии<br/>
+            для того, чтобы выбор был<br/>
+            100% удачным
+        </div>
+    </div>
+    <div class="photoMessage">
+        <a rel="example_group" href="./images/first-class-stylish-help-chat-3.jpg" title="Lorem ipsum dolor sit amet">
+            <img src="./images/first-class-stylish-help-chat-3.jpg"/>
+        </a>
+        <div class="text">
+            Стилист анализирует вещи с<br/>
+            учетом уже имеющихся вещей<br/>
+            клиентки и помогает сделать<br/>
+            правильный выбор
+        </div>
+    </div>
+    <div class="photoMessage">
+        <a rel="example_group" href="./images/first-class-stylish-help-chat-4.jpg" title="Lorem ipsum dolor sit amet">
+            <img src="./images/first-class-stylish-help-chat-4.jpg"/>
+        </a>
+        <div class="text">
+            Благодарная клиентка делится<br/>
+            впечатлениями от полученной<br/>
+            услуги и радость удачных<br/>
+            покупок
+        </div>
+    </div>
+</div>
+<footer>
+    <input type="button" value="НАВЕРХ&#11014;">
+    <div id="menuInFooter">
+        <a>Вакансии</a><br/>
+        <a>Карта сайта</a><br/>
+        <a>Политика приватности</a><br/>
+        <a>Перепечатка разрешена только с активной ссылкой на нас</a><br/>
+        <a>&copy; Glamurnenko.ru, 2005-2019 Тел.:8(800)707-05-13; +7(499)350-23-35</a><br/>
+        <a>Email: support@glamurnenko</a>
+    </div>
+</footer>
+
+<script src="demo.js" type="text/javascript"></script>
+</body>
+</html>
