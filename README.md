@@ -1,4 +1,4 @@
-# <font color="red">Glamurnenko</font>
+ <font color="red">Glamurnenko</font>
 Здесь просто вёрстка сайта с фотографии. Стэк: ванильный HTML, CSS и немного JQuery.<br/>
 Макет был дан на данной фотографии:
 <center>
